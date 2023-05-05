@@ -19,5 +19,11 @@ public class Obstacle : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(collision.gameObject);
+            GameManager.Instance.GameOver();
+        }
     }
 }
