@@ -1024,6 +1024,7 @@ MonoBehaviour:
   Rigidbody2D: {fileID: 1041284881}
   Speed: 3
   SpriteRenderer: {fileID: 1041284878}
+  Animator: {fileID: 1041284877}
 --- !u!1 &1243383086
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,7 +8,18 @@ public class PlayerController : MonoBehaviour
     public float Speed;
     public SpriteRenderer SpriteRenderer;
 
-    
+    public Animator Animator;
+
+
+    void Update()
+    {
+        if (Rigidbody2D.velocity.x != 0)
+            Animator.SetBool("Walk", true);
+        else
+            Animator.SetBool("Walk", false);
+    }
+
+
     void FixedUpdate()
     {
         if (Input.GetMouseButton(0))
