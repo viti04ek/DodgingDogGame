@@ -18,6 +18,7 @@ public class Obstacle : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             Destroy(gameObject);
+            GameManager.Instance.IncrementScore();
         }
 
         if (collision.gameObject.CompareTag("Player"))
